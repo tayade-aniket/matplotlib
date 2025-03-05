@@ -62,3 +62,59 @@ A violin plot is a method of visualizing the distribution of numerical data and 
 
 #### 11. 3D Plots in Matplotlib
 Sometimes, data visualization requires a three-dimensional perspective. We’ll delve into creating 3D plots to visualize complex relationships and structures within multidimensional datasets.
+
+# Matplotlib – Axes Class
+Matplotlib is one of the Python packages which is used for data visualization. You can use the NumPy library to convert data into an array and numerical mathematics extension of Python. Matplotlib library is used for making 2D plots from data in arrays.
+
+## Axes class
+Axes is the most basic and flexible unit for creating sub-plots. Axes allow placement of plots at any location in the figure. A given figure can contain many axes, but a given axes object can only be in one figure. The axes contain two axis objects 2D as well as, three-axis objects in the case of 3D. Let’s look at some basic functions of this class.
+
+### axes() function
+axes() function creates axes object with argument, where argument is a list of 4 elements [left, bottom, width, height]. Let us now take a brief look to understand the axes() function.
+
+```bash
+    axes([left, bottom, width, height])
+```
+
+### add_axes() function
+Alternatively, you can also add the axes object to the figure by calling the add_axes() method. It returns the axes object and adds axes at position [left, bottom, width, height] where all quantities are in fractions of figure width and height.
+
+```bash
+    add_axes([left, bottom, width, height])
+```
+
+### ax.legend() function
+Adding legend to the plot figure can be done by calling the legend() function of the axes class. It consists of three arguments.
+
+```bash
+    ax.legend(handles, labels, loc)
+```
+
+### ax.plot() function
+plot() function of the axes class plots the values of one array versus another as line or marker.
+
+```bash
+Syntax :  plt.plot(X, Y, ‘CLM’)
+
+
+Parameters:
+
+    X is x-axis.
+
+    Y is y-axis.
+
+    ‘CLM’ stands for Color, Line and Marker.
+```
+
+#### Note: Line can be of different styles such as dotted line (':'), dashed line ('—'), solid line ('-') and many more.
+
+### Marker codes
+
+| Characters |  Description     |
+|:-----------|:----------------:|
+| ‘.’        | Point Marker     | 
+| ‘o’        | Circle Marker    | 
+| ‘+’        | Plus Marker      | 
+| ‘s’        | Square Marker    | 
+| ‘D’        | Diamond  Marker  | 
+| ‘H’        | Hexagon  Marker  | 
