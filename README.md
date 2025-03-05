@@ -60,5 +60,5 @@ Error plots display the variability or uncertainty associated with each data poi
 #### 10. Violin Plot
 A violin plot is a method of visualizing the distribution of numerical data and its probability density. It is similar to a box plot but provides additional insights into the data’s distribution by incorporating a kernel density estimation (KDE) plot mirrored on each side. This allows for a more comprehensive understanding of the data’s central tendency, spread, and shape.
 
-### 3D Plots in Matplotlib
+### 11. 3D Plots in Matplotlib
 Sometimes, data visualization requires a three-dimensional perspective. We’ll delve into creating 3D plots to visualize complex relationships and structures within multidimensional datasets.
